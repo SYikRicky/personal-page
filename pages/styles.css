@@ -1,7 +1,10 @@
-body {
-    font-family: Roboto, sans-serif;
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
     min-height: 100vh;
 
     display: flex;
@@ -18,8 +21,6 @@ a {
 ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
     gap: 16px;
 }
 
@@ -39,11 +40,18 @@ ul {
     font-size: 18px;
 }
 
-.main {
+#main {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
     align-items: center;
     justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
 }
 
 button {
@@ -77,6 +85,7 @@ button {
 .intro .text {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 .crop {
@@ -89,6 +98,93 @@ button {
     height: 300px;
     margin: -70px 0 0 -20px;
 } 
+
+.item-1, .item-2, .item-3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.item-1 .heading {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.item-1 .content {
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; */
+}
+
+.item-1 .content .box {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 16px;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 1;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.item-1 .content .text {
+    color: gray;
+}
+
+.item-2 {
+    background: #e2e7eb;
+}
+
+.item-2 .quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-2 .quote .content {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.item-3 {
+    display: flex;
+    flex: 1;
+    background: white;
+    color: #f9faf8;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item-3 .box {
+    display: flex;
+    background-color: #3882f6;
+    padding: 30px 100px;
+    border-radius: 8px;
+    gap: 50px;
+}
+
+.item-3 .box text {
+    font-size: larger;
+}
+
+.item-3 .box .subtext {
+    font-size: 14px;
+    color: #e2e7eb;
+}
+
+
+.item-3 .box button {
+    border: 1px solid #eee;
+}
 
 .footer {
     background: #1f2937;
